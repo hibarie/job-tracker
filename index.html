@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>転職活動トラッカー</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div>
+      <h1>転職活動トラッカー</h1>
+      <p>応募先の状況をここでまとめて管理できます。</p>
+    </div>
+    <button class="iconbtn" id="btn-reset" type="button">サンプルデータに戻す</button>
+  </div>
+
+  <div class="demo-banner">これはポートフォリオ用のサンプルデータです。実際の応募データは含まれていません。入力した内容はこのブラウザにのみ保存されます。</div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="addbar">
+    <div class="addbar-row">
+      <input class="company" id="in-company" placeholder="会社名" />
+      <input class="position" id="in-position" placeholder="職種" />
+      <input class="date" id="in-date" type="date" />
+      <select class="status" id="in-status"></select>
+      <button id="btn-add" type="button">追加</button>
+    </div>
+    <div class="addbar-row2">
+      <input id="in-salary" placeholder="給与・条件メモ(任意)" />
+      <input id="in-url" placeholder="求人URL(任意)" />
+      <input id="in-next" placeholder="次にやること(任意)" />
+    </div>
+  </div>
+
+  <div class="list" id="list"></div>
+  <p class="foot">変更はすぐに保存されます。</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
